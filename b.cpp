@@ -20,34 +20,7 @@ void init_kode(){
     freopen("input.txt", "r", stdin);
     freopen("output.txt", "w", stdout);
 #endif // ONLINE_JUDGE
-}
-//bool prime[10000001];
-// void SieveOfEratosthenes()
-// {   ll i;
-//     ll n=1e7+1;
-//     memset(prime, true, sizeof(prime));
-//     for (ll p = 2; p * p <= n; p++)
-//     {
-//         if (prime[p] == true)
-//         {
-//             for (ll i = p * p; i <= n; i += p)
-//                 prime[i] = false;
-//         }
-//     }
-// } 
-// ll binexp(ll a,ll b)
-// {
-//     ll ans=1;
-//     while(b)
-//     {
-//         if(b%2)
-//         { ans=(ans*a)%mod;
-//         }
-//     a=(a*a)%mod;
-//     b/=2;
-//     }
-//     return ans;
-// }   
+} 
 ll inf=1e16;
 using ii=pair<ll,ll>;
 int board[9][9];
@@ -114,7 +87,6 @@ int main()
         }
     }
     rec(0,0);
-
     // cout<<'\n';
     } 
     return 0;
